@@ -1,6 +1,7 @@
 # Blood-Bank-Management-
 This is a menu-driven, command-line Blood Bank Management System designed . It allows both Admin and User interactions, offering key functionalities for managing donors, processing blood requests, and maintaining inventory. 
 
+NOTE: """"THIS IS ONLY BACKEND PART OF THE PROGRAMMING DONE IN PYTHON AND SQL ONLY. IT CAN BE CONSIDERED AS A MINI- PROJECT. THE WEBSITE WILL NOT BE DONE"""""
 👤 Roles & Access
 Admin (Login Required)
 
