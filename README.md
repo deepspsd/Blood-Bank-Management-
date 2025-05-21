@@ -28,14 +28,22 @@ Admin (admin panel)
 
 🗂️ Modules
 Main.py: Entry point. Prompts user to choose role and navigates to respective menu.
+
 Admin.py: Handles admin functions like approval and inventory management.
+
 BloodBank.py: Manages donor registration, requests, and listings.
+
 Inventory.py: Displays and updates blood availability.
+
 database.py: Provides db_query() and DB connection (mydb) for SQL operations.
 
 💾 Database Structure (Overview)
 request table: Stores blood request info (patient name, blood type, status, etc.)
+
 inventory table: Tracks available units per blood type
+
+Tools Used to make this project:
+VSCode, Chatgpt, Youtube, MySql Server.
 
 🔓 Admin Credentials (for testing)
 Username: Deepak / Deepa
