@@ -16,17 +16,24 @@ View current blood inventory
 See donor and request lists
 Process their own blood requests
 
-✅ Features
+✅ Features:
+
 Role-based login (Admin/User)
+
 Clean, text-based interface
+
 Secure admin access with hardcoded credentials
 
 Modular structure using:
+
 BloodBank (donors & requests)
+
 Inventory (blood stock)
 Admin (admin panel)
 
-🗂️ Modules
+
+🗂️ Modules:
+
 Main.py: Entry point. Prompts user to choose role and navigates to respective menu.
 
 Admin.py: Handles admin functions like approval and inventory management.
