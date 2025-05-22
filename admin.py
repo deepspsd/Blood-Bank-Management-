@@ -12,6 +12,7 @@ class Admin:
                   "2. Approve Request \n"
                   "3. View All Requests \n"
                   "4. Alter Blood Inventory \n"
+                  "5. View Inventory \n"
                   "5. Exit \n"
                   "Enter your choice: "))
             
@@ -32,6 +33,8 @@ class Admin:
             elif options == 4:
                 Admin.alter_inventory()
             elif options == 5:
+                Inventory.check_inventory()
+            elif options == 6:
                 print("Thank you for using SVCE Blood Bank Admin Panel")
                 break
             else:
@@ -139,6 +142,23 @@ class Admin:
                 
         except Exception as e:
             print(f"Error: {str(e)}")
+            mydb.rollback()
+
+    @staticmethod
+    def view_inventory():
+        try:
+            query = "SELECT * FROM inventory"
+            result = db_query(query)
+            if not result:
+                print("No blood inventory found")
+                return
+            print("\nCurrent Blood Inventory:")
+            print("Blood Type | Quantity")
+            print("-" * 30)
+            for blood in result:
+                print(f"{blood[1]:^10} | {blood[2]:^8}")
+        except Exception as e:
+            print(f"Error viewing inventory: {str(e)}")
             mydb.rollback()
 
 if __name__ == "__main__":
