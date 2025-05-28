@@ -13,7 +13,7 @@ class Admin:
                   "3. View All Requests \n"
                   "4. Alter Blood Inventory \n"
                   "5. View Inventory \n"
-                  "5. Exit \n"
+                  "6. Exit \n"
                   "Enter your choice: "))
             
             try:
